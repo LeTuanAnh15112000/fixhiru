@@ -1,0 +1,16 @@
+.c-text1 {
+    font-weight: bold;
+    font-size: ( 18px / $font-size) * 1rem;
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    &.--center {
+        text-align: center;
+    }
+    &.--bold {
+        font-weight: 700;
+    }
+    &.--white{
+        color: #fff;
+    }
+}

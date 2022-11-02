@@ -1,0 +1,235 @@
+.l-header {
+	background-color: $header-bg;
+	position: relative;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	&__inner {
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__content {
+		display: flex;
+		align-items: center;
+		height: 80px;
+		position: relative;
+
+		&.is-open {
+			position: fixed;
+			z-index: 100;
+			left: 20px;
+			right: 20px;
+		}
+	}
+	&__logo {
+		margin-left: 10%;
+		h1 {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: 0.3s all;
+			&:hover{
+				opacity: 0.7;
+			}
+			span {
+				padding: 1em 0;
+			}
+		}
+	}
+	&__nav {
+		height: 100%;
+		margin-left: auto;
+	}
+	&__nav__inner {
+		height: 100%;
+	}
+	&__contents {
+		height: 100%;
+	}
+	&__list {
+		height: 100%;
+		display: flex;
+	}
+	&__sns{
+		position: absolute;
+		right: 40px;
+		top: calc(100% + 40px);
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-right: 1.5em;
+		}
+		& > a {
+			font-size:clamp(( 12px / $font-size) * 1rem , 1.5vw , ( 18px / $font-size) * 1rem);
+			font-weight: bold;
+			padding: 0 .5em;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.3s all;
+		
+			span {
+				text-align: center;
+				display: block;
+				padding: 1em 0;
+			}
+		}
+	}
+
+}
+
+.l-menu__button {
+	display: none;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin-left: auto;
+	z-index: 20;
+	padding-top: 45px;
+	text-align: center;
+	background: #000;
+	color: #fff;
+	span {
+		display: block;
+		width: 50px;
+		height: 2px;
+		background-color: #fff;
+		position: absolute;
+		transform: translate(-50%);
+		transition: 0.3s all;
+		&:nth-child(1) {
+			top: 17%;
+			left: 50%;
+		}
+		&:nth-child(2) {
+			top: 34%;
+			left: 50%;
+		}
+		&:nth-child(3) {
+			top: 50%;
+			left: 50%;
+		}
+	}
+
+	&.is-open {
+		span {
+			&:nth-child(1) {
+				top: 34%;
+				left: 50%;
+				transform: translate(-50%) rotate(-27deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				top: 34%;
+				left: 50%;
+				transform: translate(-50%) rotate(27deg);
+			}
+		}
+	}
+}
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+	.l-header {
+		&__nav {
+			display: block !important;
+		}
+		&__item {
+			& > a {
+				&:hover{
+					span {
+						position: relative;
+						&::after {
+							content: "";
+							display: block;
+							width: 100%;
+							height: 2px;
+							background-color: #000;
+							position: absolute;
+							bottom: 16px;
+						}
+					}
+				}
+				// active menu
+				&.is-active{
+					span {
+						position: relative;
+						&::after {
+							content: "";
+							display: block;
+							width: 100%;
+							height: 2px;
+							background-color: #000;
+							position: absolute;
+							bottom: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Tablet + PC1200 handel menu
+// --------------------------------------------------
+@include media-breakpoint-tab-pc{
+	.l-header {
+				&__logo {
+					margin-left: 5%;
+				}
+		&__item {
+			&:not(:last-child) {
+				margin-right: 1em;
+			}
+			& > a {
+				span {
+				}
+			}
+		}
+	}
+}
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+	.l-header {
+		&__logo{
+			z-index: 30;
+		}
+		&__sns{
+			position: absolute;
+			right: 40px;
+			top: 100px;
+		}
+		&__nav {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			padding-top: 100px;
+		    background-color: #fff;
+			overflow: scroll;
+			z-index: 10;
+		}
+		&__list {
+			display: block;
+		}
+		&__item {
+			padding: 1em 60px;
+			position: relative;
+		}
+	}
+
+	.l-menu__button {
+		display: block;
+	}
+}

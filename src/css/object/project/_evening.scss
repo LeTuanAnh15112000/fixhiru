@@ -1,0 +1,45 @@
+.p-evening{
+    &__family{
+        &Text{
+            text-align: center;
+            margin-block: 117px 124px;
+        }
+    }
+    &__accept{
+        text-align: center;
+        margin-top: 103px;
+        .c-heading2{
+            margin-bottom: 34px;
+        }
+        &Img{
+            display: flex;
+            margin-top: 159px;
+        }
+        &Item{
+            width: calc((100% / 3) - 59px);
+            height: 356px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+            &:not(:last-child) {
+                margin-right: 89px;
+            }
+        }
+    }
+}
+@include media-breakpoint-sp{
+    .p-evening{
+        &__accept{
+            &Img{
+                flex-direction: column;
+            }
+            &Item{
+                width: 100%;
+                height: 230px;
+                margin-bottom: 20px;
+                
+            }
+        }
+    }
+}

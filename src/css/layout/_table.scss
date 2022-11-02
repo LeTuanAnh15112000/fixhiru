@@ -1,0 +1,46 @@
+.l-table {
+    table, tr{
+        width: 100%;
+    }
+    &__th{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        width: 35.4%;
+        border-bottom: 1px solid #fff;
+        vertical-align: middle;
+        text-align: center;
+        background: #000;
+    }
+    &__td{
+        font-size: 1.125rem;
+        font-weight: bold;
+        padding: 17px 30px 22px 73px;
+        border-bottom: 1px solid #000;
+        width: 64.6%;
+    }
+    &__flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &Col{
+            line-height: 1.5;
+            margin-bottom: 10px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+    // &__content{
+
+    // }
+}
+
+@include media-breakpoint-sp{
+    .l-table {
+        &__td{
+            padding: 10px 10px 10px 15px;
+            width: 64.6%;
+        }
+    }
+}

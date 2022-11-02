@@ -1,0 +1,27 @@
+/* pagetitle */ 
+
+.yoru{
+    .c-pagetitle{
+        &Bg{
+            background-image: url('../../images/index/background_shop.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+            padding-top: 38%;
+        }
+    }
+}
+
+.evening{
+    .c-pagetitle{
+        &Bg{
+            background-image: url('../../images/index/background_evening.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+            padding-top: 38%;
+        }
+    }
+}

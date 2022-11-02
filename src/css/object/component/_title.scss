@@ -1,0 +1,42 @@
+/* title */ 
+
+.c-heading1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &.--white{
+        span{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    span {
+        font-size: ( 36px / $font-size) * 1rem;
+        color: #fff;
+        background-color: #000;
+        line-height: 1.4;
+        padding: 0 20px;
+        min-height: 54px;
+    }
+    &::after , &::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 56px;
+        background: url(./images/common/icon_heading01.png) center center no-repeat;
+        background-size: contain;
+    }
+    &::after {
+        transform: rotate(180deg);
+    }
+
+}
+.c-heading2{
+    font-size: ( 32px / $font-size) * 1rem;
+    font-weight: bold;
+}
+.c-heading2{
+    
+}

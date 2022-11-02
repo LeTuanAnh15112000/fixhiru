@@ -1,0 +1,295 @@
+<%- include('../_config', { extend: {
+	relativePath: '..',
+	page: {
+		id: 'hiru',
+		title: 'ひる',
+		description: 'ショッピング',
+	}
+}}); %><%- include('../_header'); %>
+					<section class="p-yoru <%= getPageId() %>">
+						<div class="l-container2">
+							<div class="u-contain">
+								<img class="u-left" src="<%= getRelativePath('/image/left.png'); %>" alt="よるのこだわり">
+								<h2 class="u-title">
+									ひるの<br class="u-onlysp">こだわり
+								</h2>
+								<img class="u-right" src="<%= getRelativePath('/image/right.png'); %>" alt="よるのこだわり">
+							</div>
+							<p class="c-yoru__text">
+								限られたお昼の時間で、エネルギーをチャージしてもらいたい。
+							そんな思いで、活気のあるスタッフとチームワークで自慢の味をスピーディーにお届けします。
+							らーめんとちゃんぽんを主軸にしたランチメニューを揃えています。
+							野菜たっぷりのちゃんぽんは女性にもおすすめです。
+							ほとんどのお客様が注文される、ひるとよる自慢の焼き飯もぜひご賞味ください。
+							</p>
+							<div class="u-contain">
+								<img class="u-left" src="<%= getRelativePath('/image/left.png'); %>" alt="メニュー">
+								<h2 class="u-title">
+									メニュー
+								</h2>
+								<img class="u-right" src="<%= getRelativePath('/image/right.png'); %>" alt="メニュー">
+							</div>
+						</div>
+					</section>
+					<section class="p-tabs">
+						<div class="l-container">
+							<div class="c-tabs">
+								<ul class="c-tabs__nav">
+									<li class="is-active" data-tab="1" >麺・ごはん</li>
+									<li data-tab="2">ドリンク</li>
+								</ul>
+								<div class="c-tabs__content">
+									<div class="c-tabs__content--item is-active" id="1">
+										<div class="u-slider">
+											<div class="u-item js-mainslick">
+												<div class="u-img" style="background-image: url('<%= getRelativePath("/image/slider_tab7-1.jpg"); %>');"></div>
+												<div class="u-img" style="background-image: url('<%= getRelativePath("/image/slider_tab7-2.jpg"); %>');"></div>
+												<div class="u-img" style="background-image: url('<%= getRelativePath("/image/slider_tab7-3.jpg"); %>');"></div>
+											</div>
+										</div>
+										<div class="c-tabs__content--contain">
+											<div class="c-tabs__content--same">
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">お昼のセットメニュー</h2>
+													<div class="c-tabs__content--text">
+														<ul class="u-mb1">
+															<li><span>A：らーめん</span><span>630円</span></li>
+															<li><span>A：焼きめし</span><span>660円</span></li>
+															<li><span>B：らーめんと白めし</span><span>750円</span></li>
+															<li><span>C：らーめんと餃子（4コ）と白めし</span><span>850円</span></li>
+															<li><span>D：らーめんと半焼きめし</span><span>850円</span></li>
+															<li><span>E：おすきな麵＋白めし</span><span>850円</span></li>
+															<li><span>F：おすきな麺＋半焼きめし</span><span>950円</span></li>
+															<li><span>レディースセット：おすきな麺と餃子（4コ）</span><span>850円</span></li>
+														</ul>
+														<p>※EセットとFセットは（博多ちゃんぽん・博多の皿うどん・ソース焼きそば）の中から１つお選びいただけます。</p>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">焼きめし・ごはん</h2>
+													<div class="c-tabs__content--text">
+														<ul>
+															<li><span>焼きめし</span><span>660円</span></li>
+															<li><span>たかな焼きめし</span><span>760円</span></li>
+															<li><span>ネギ焼きめし</span><span>760円</span></li>
+															<li><span>雲仙ハムとレタスの焼きめし</span> <span>820円</span></li>
+															<li><span>麻婆ライス</span> <span>920円</span></li>
+															<li><span>中ごはん</span> <span>220円</span></li>
+															<li><span>大ごはん</span> <span>270円</span></li>
+															<li><span>とん骨卵スープ</span> <span>200円</span></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="c-tabs__content--same">
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">らーめん</h2>
+													<div class="c-tabs__content--text">
+														<ul>
+															<li><span>らーめん</span><span>660円</span></li>
+															<li><span>チャーシューめん</span><span>890円</span></li>
+															<li><span>ネギらーめん</span><span>780円</span></li>
+															<li><span>もやしらーめん</span><span>780円</span></li>
+															<li><span>たかならーめん</span><span>780円</span></li>
+															<li><span>味噌トンらーめん</span><span>780円</span></li>
+															<li><span>焼らーめん</span><span>780円</span></li>
+															<li><span>明太焼らーめん</span><span>800円</span></li>
+															<li><span>替玉</span><span>120円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">ちゃんぽん</h2>
+													<div class="c-tabs__content--text">
+														<ul>
+															<li><span>博多ちゃんぽん</span><span>800円</span></li>
+															<li><span>味噌ちゃんぽん</span><span>850円</span></li>
+															<li><span>激辛ちゃんぽん</span><span>850円</span></li>
+															<li><span>モツちゃんぽん</span><span>950円</span></li>
+															<li><span>博多の皿うどん</span><span>800円</span></li>
+															<li><span>ソース焼きそば</span><span>790円</span></li>
+															<li><span>替玉(らーめん麺)</span><span>120円</span></li>
+															<li><span>納豆トッピング</span><span>100円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2 --lineHeight">ひるの季節限定メニュー<br><span>（冷たい夏の麺）</span></h2>
+													<div class="c-tabs__content--text">
+														<ul>
+															<li><span>冷麺</span><span>820円</span></li>
+															<li><span>担々麺</span><span>780円</span></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="c-tabs__content--item" id="2">
+										<div class="u-slider">
+											<div class="u-item js-mainslick">
+												<div class="u-img" style="background-image: url('<%= getRelativePath("/image/slider_tab6-1.jpg"); %>');"></div>
+												<div class="u-img" style="background-image: url('<%= getRelativePath("/image/slider_tab6-2.jpg"); %>');"></div>
+											</div>
+										</div>
+										<div class="c-tabs__content--contain">
+											<div class="c-tabs__content--same">
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">ビール</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>生ビール/The プレミアム・モルツ(中)</span><span>530円</span></li>
+															<li><span>生ビール/The プレミアム・モルツ(小)</span><span>400円</span></li>
+															<li><span>アサヒスーパードライ(大瓶)</span><span>660円</span></li>
+															<li><span>アサヒスーパードライ(中瓶)</span><span>560円</span></li>
+															<li><span>アサヒスーパードライ(135mミニ缶)</span><span>150円</span></li>
+															<li><span>サッポロラガー赤星(中瓶)</span><span>560円</span></li>
+															<li><span>シャンディーガフ</span><span>530円</span></li>
+															<li><span>サントリーノンアルコールビール</span><span>450円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">ハイボール</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>角ハイボール(中)</span><span>630円</span></li>
+															<li><span>角ハイボール(小)</span><span>530円</span></li>
+															<li><span>角ハイカムカム(中)</span><span>680円</span></li>
+															<li><span>角ハイカムカム(小)</span><span>580円</span></li>
+															<li><span>角ハイコーラ(中)</span><span>680円</span></li>
+															<li><span>角ハイコーラ(小)</span><span>580円</span></li>
+															<li><span>角ハイジンジャー(中)</span><span>680円</span></li>
+															<li><span>角ハイジンジャー(小)</span><span>580円</span></li>
+															<li><span>知多ハイボール</span><span>620円</span></li>
+															<li><span>白州ハイボール</span><span>720円</span></li>
+															<li><span>㐂六パンチ</span><span>550円</span></li>
+															<li><span>鏡洲ジンジャーハイボール</span><span>550円</span></li>
+															<li><span>ジムビームハイボール</span><span>450円</span></li>
+															<li><span>翠ジンソーダ</span><span>450円</span></li>
+															<li><span>コーヒーハイボール</span><span>600円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">ワイン</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>グラスワイン(赤・白)</span><span>450円</span></li>
+															<li><span>がぶのみジョッキワイン(赤・白)</span><span>500円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">カシス</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>カシスソーダ</span><span>490円</span></li>
+															<li><span>カシスオレンジ</span><span>490円</span></li>
+															<li><span>カシスウーロン</span><span>490円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">酎ハイ</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>スーパーレモン酎ハイ</span><span>600円</span></li>
+															<li><span>生絞りレモン酎ハイ</span><span>580円</span></li>
+															<li><span>生絞りライム酎ハイ</span><span>580円</span></li>
+															<li><span>生絞りオレンジ酎ハイ</span><span>580円</span></li>
+															<li><span>ウーロンハイ</span><span>520円</span></li>
+															<li><span>濃い緑茶ハイ</span><span>520円</span></li>
+															<li><span>カルピス酎ハイ</span><span>520円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">果実酒</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>あらごし梅酒</span><span>550円</span></li>
+															<li><span>あらごしみかん</span><span>550円</span></li>
+															<li><span>あらごしもも</span><span>550円</span></li>
+															<li><span>あらごしれもん</span><span>550円</span></li>
+															<li><span>ふわとろパイン</span><span>550円</span></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="c-tabs__content--same">
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">焼酎</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>黒霧島(グラス)</span><span>400円</span></li>
+															<li><span>黒霧島(２合)</span><span>1,000円</span></li>
+															<li><span>島美人(グラス)</span><span>400円</span></li>
+															<li><span>島美人(２合)</span><span>1,000円</span></li>
+															<li><span>飫肥杉(グラス)</span><span>400円</span></li>
+															<li><span>飫肥杉(2合)</span><span>1000円</span></li>
+															<li><span>㐂六(グラス)</span><span>500円</span></li>
+															<li><span>㐂六(２合)</span><span>1,400円</span></li>
+															<li><span>球 “Q” (グラス)</span><span>550円</span></li>
+															<li><span>球 “Q”(ボトル)</span><span>1,400円</span></li>
+															<li><span>三岳(グラス)</span><span>550円</span></li>
+															<li><span>三岳(2合)</span><span>1,400円</span></li>
+															<li><span>吉助 赤(グラス)</span><span>600円</span></li>
+															<li><span>吉助 赤(2合)</span><span>1,400円</span></li>
+															<li><span>壱岐スーパーゴールド(グラス)</span><span>500円</span></li>
+															<li><span>壱岐スーパーゴールド(2合)</span><span>1,400円</span></li>
+															<li><span>二階堂(グラス)</span><span>420円</span></li>
+															<li><span>二階堂(2合)</span><span>1,000円</span></li>
+															<li><span>白岳しろ(グラス)</span><span>420円</span></li>
+															<li><span>白岳しろ(2合)</span><span>1,000円</span></li>
+														</ul>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">日本酒</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>雨後の月(グラス)</span><span>700円</span></li>
+															<li><span>雨後の月(1合)</span><span>900円</span></li>
+															<li><span>美田 辛譲(グラス)</span><span>600円</span></li>
+															<li><span>美田 辛譲(1合)</span><span>800円</span></li>
+															<li><span>久保田千寿(グラス)</span><span>600円</span></li>
+															<li><span>久保田千寿(1合)</span><span>800円</span></li>
+															<li><span>まつもと守破離(グラス)</span><span>600円</span></li>
+															<li><span>まつもと守破離(1合)</span><span>800円</span></li>
+															<li><span>三千盛DRY(グラス)</span><span>700円</span></li>
+															<li><span>三千盛DRY(１合)</span><span>900円</span></li>
+															<li><span>万作(グラス)</span><span>700円</span></li>
+															<li><span>万作(1合)</span><span>900円</span></li>
+														</ul>
+														<p class="c-tabs__content--textright">※季節により入れ替わります。</p>
+													</div>
+												</div>
+												<div class="c-tabs__content--general">
+													<h2 class="u-title2">ノンアルコール・ソフトドリンク</h2>
+													<div class="c-tabs__content--text u-none-magrin">
+														<ul>
+															<li><span>ノンアルコールビール/サントリー</span><span>450円</span></li>
+															<li><span>カムカムソーダ</span><span>330円</span></li>
+															<li><span>コカ・コーラ</span><span>330円</span></li>
+															<li><span>ジンジャーエール</span><span>330円</span></li>
+															<li><span>自家製レモンスカッシュ</span><span>330円</span></li>
+															<li><span>自家製レモネード</span><span>330円</span></li>
+															<li><span>カルピス</span><span>330円</span></li>
+															<li><span>オレンジ</span><span>330円</span></li>
+															<li><span>ピンクグレープフルーツ</span><span>330円</span></li>
+															<li><span>炭酸水</span><span>270円</span></li>
+															<li><span>烏龍茶</span><span>230円</span></li>
+															<li><span>緑茶</span><span>230円</span></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="c-tabs__content--prices">※価格は全て税込価格です。</div>
+							</div>
+						</div> 
+					</section>
+<%- include('../_footer'); %>

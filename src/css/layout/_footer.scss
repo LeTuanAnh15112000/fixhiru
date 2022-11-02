@@ -1,0 +1,68 @@
+.l-footer {
+	background: #000;
+	text-align: center;
+	margin-top: 116px;
+	&__content{
+		img{
+			padding-top: 56px;
+			max-width: 360px;
+			width: 96%;
+		}
+	}
+	&__inner {
+		width: 92%;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	&__banner{
+		margin: 47px 0 42px 0;
+		background-image: url("../../images/common/bg_footer_banner.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		display: inline-block;
+		&Content{
+			display: inline-flex;
+			align-items: center;
+			padding: 20px 40px 20px 60px;
+			margin: 10px;
+			font-weight: bold;
+			color: #fff;
+			font-size: ( 20px / $font-size) * 1rem;
+			border: 2px solid $white;
+			position: relative;
+			&::before{
+				position: absolute;
+				content: "";
+				left: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				background-image: url("../../images/common/icon_cart01.png");
+				width: 26px;
+				height: 23px;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	&__list{
+		font-size: ( 16px / $font-size) * 1rem;
+		font-weight: bold;
+		display: $flex;
+		justify-content: space-between;
+		a{
+			color: $white;
+			display: inline-block;
+			padding: 5px 8px;
+			line-height: 1.95;
+		}
+	}
+	&__copyright{
+		font-size: ( 14px / $font-size) * 1rem;
+		font-weight: bold;
+		padding: 22px 0 10px;
+		letter-spacing: 0.4px;
+		color: #fff;
+	}
+	
+}

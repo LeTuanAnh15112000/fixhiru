@@ -1,0 +1,35 @@
+				</article>
+				<!-- /.<%= getArticleClass('.'); %> -->
+			</main>
+			<!-- /#primary -->
+		</div>
+		<!-- /#content -->
+		<footer class="l-footer">
+			<div class="l-footer__inner">
+				<div class="l-footer__content">
+					<img src="<%= getRelativePath('/images/common/img_logo_footer.png'); %>" alt="img_logo_footer">
+					<a class="l-footer__banner" href="<%= getRelativePath('/'); %>">
+						<div class="l-footer__bannerContent"><span>オンラインショップ</span></div>
+					</a>
+					<ul class="l-footer__list">
+						<li class="l-footer__listItem"><a href="<%= getRelativePath('/hiru'); %>">ひる</a></li>
+						<li class="l-footer__listItem"><a href="<%= getRelativePath('/yoru'); %>">よる</a></li>
+						<li class="l-footer__listItem"><a href="#">ショッピング</a></li>
+						<li class="l-footer__listItem"><a href="<%= getPageId() != 'index' ? getRelativePath('/index.html') : ''; %>#a-store">店舗情報</a></li>
+						<li class="l-footer__listItem"><a href="<%= getRelativePath('/evening'); %>">採用情報</a></li>
+					</ul>
+					<div class="l-footer__copyright">©2022 ひるとよる All Rights Reserved.</div>
+				</div>
+			</div>
+		</footer> 
+		<!-- /#footer -->
+	</div>
+	<!-- /#all -->
+	<script src="<%= getRelativePath('/js/jquery-3.6.0.min.js'); %>"></script>
+	<script src="<%= getRelativePath('/js/script.js'); %>"></script>
+	<script src="<%= getRelativePath('/js/slick.min.js'); %>"></script>
+	<script src="<%= getRelativePath('/js/index.js'); %>"></script>
+	<% if(getPageId() == 'index') { %>  
+	<% } %>
+</body>
+</html>

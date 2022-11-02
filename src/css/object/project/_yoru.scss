@@ -1,0 +1,18 @@
+.p-yoru{
+    &__obsession{
+        margin-top: 118px;
+        .l-inner{
+            max-width: calc(700px + 40px);
+            width: 96%;
+            .c-text1{
+                margin: 69px 0 191px;
+            }
+        }
+    }
+    &__tab{
+        margin-top: 80px;
+    }
+}
+@include media-breakpoint-sp{
+   
+}

@@ -1,0 +1,41 @@
+/* newsparts */ 
+.c-news{
+    padding: 14px 10px;
+    border-bottom: 2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:first-child{
+    border-top: 2px solid #000;
+    }
+    &__link, &__head{
+        display: flex;
+    }
+    &__day {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    &__new{
+        color: $white;
+        background: $black;
+        display: inline-block;
+        margin-right: 12px;
+        padding: 0 8px;
+    }
+}
+
+
+// Desktop + Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    .c-news {
+        &__item {
+            a {
+                transition: 0.3s all;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
